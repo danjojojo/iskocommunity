@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-
+    scale=1.0">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/tables.css">
+    <link rel="stylesheet" href="/css/edit-users.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="adminSidebar">
+            <a class="logo" href="../index.html">Logo</a>
+            <ul>
+                <li><a href="/admin/dashboard.html">Home</a></li>
+                <li><a href="/admin/admins.html">Admins</a></li>
+                <li><a href="/admin/students.html">Students</a></li>
+                <li><a href="/admin/colleges.html">Colleges</a></li>
+                <li><a href="/admin/organizations.html">Organizations</a></li>
+                <li><a href="/admin/posts.html">Posts</a></li>
+                <li><a href="/admin/tickets.html">Support Tickets</a></li>
+            </ul>
+            <!-- <a class="logout" href="#">Log-out</a> -->
+        </div>
+        <div class="dashboardContent">
+            <div class="adminHeader">
+                <div class="title">
+                    <h2>Dashboard</h2>
+                    <p id="date"></p>
+                </div>
+                <div class="profile">
+                    <div class="profile-pic"></div>
+                    <p>Username</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-header">
+                    <h1>Edit Profile</h1>
+                </div>
+                <div class="content-sidebar-form">
+                    <div class="content-sidebar">
+                        <ul>
+                            <li><a href="edit-info.html">Account Information</a></li>
+                            <li><a href="edit-pass.html">Change Password</a></li>
+                            <li><a href="edit-del.html">Delete Account</a></li>
+                        </ul>
+                    </div>
+                    <form action="" method="post">
+                        <h2>Change Password</h2>
+                        <div class="errormsg">
+                            <ul>
+                                <li>Error message</li>       
+                            </ul>
+                        </div>                       
+                        <label for="oldpassword">Current Password</label>
+                        <input type="text" name="oldpassword" id="oldpassword">
+                        <label for="password">New Password</label>
+                        <input type="text" name="password" id="password">
+                        <label for="confirmpassword">Confirm New Password</label>
+                        <input type="text" name="confirmpassword" id="confirmpassword">
+                        <div class="buttons">
+                            <button type="submit" name="submit">Save changes</button>
+                            <a href="/admin/admins.html" class="cancel">Cancel</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>    
+    </div>
+
+    <script src="/../../js/date.js"></script>
+</body>
+</html>
