@@ -1,0 +1,115 @@
+/* CONTENT LAYOUT*/
+.content-header, .table-header, table, .content-footer, .search-create{
+    margin: 0 auto;
+    width: 90%;
+    padding: 1.3rem;
+}
+a{
+    color: blue;
+}
+
+/* CONTENT HEADER */
+.content-header{
+    border: 1px solid rgb(89, 46, 139);
+}
+
+/* SEARCH */
+.search-create{
+    padding: 1rem;
+    display: flex;
+    border: 1px solid black;
+    justify-content: space-between;
+    align-items: center;
+}
+.search input, .search button, .create-new a{
+    padding: 1rem;
+    border-radius: 9px;
+    border: 1px solid black;
+    text-decoration: none;
+}
+
+.search input, .search button{
+    font-size: 1rem;
+}
+
+/* TABLE HEADER */
+.table-header{
+    border: 1px solid black;
+}
+
+.table-header-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sort-options, .sort-options-org {
+    display: flex;
+    align-items: center;
+}
+
+.sort-options p, .sort-options-org p{
+    margin-right: 1em;
+}
+
+.sort-options a{
+    border: 1px solid rgb(0, 81, 255);
+    padding: 0.5em;
+    width: 5em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.sort-options-org a{
+    border: 1px solid rgb(0, 81, 255);
+    padding: 0.5em;
+    width: 6em;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.sort-options .selected, .sort-options-org .selected{
+    background: rgb(0, 81, 255);
+    color: white;
+}
+
+/* MSG */
+.msg{
+    border: 1px solid seagreen;
+    background: rgba(0, 255, 72, 0.254);
+    padding: 1.3em 1em;
+    margin: 1.3em 0 0;
+    border-radius: 10px;
+}
+
+/* TABLE */
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    border: 1px solid black;
+    text-align: center;
+    line-height: 2em;
+}
+table a{
+    text-decoration: none;
+}
+
+/* CONTENT FOOTER */
+.content-footer{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 2em;
+    padding-right: 0;
+}
+.pagination a{
+    border: 1px solid black;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+
+

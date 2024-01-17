@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* MAIN LAYOUT */
+.container {
+    display: flex;
+    min-height: 100svh;
+}
+
+.adminSidebar {
+    border: 2px solid red;
+    height: 100svh;
+    width: 20%;
+}
+
+.dashboardContent {
+    
+    width: 80%;
+    height: 100%;
+}
+
+.adminHeader {
+    display: flex;
+    border: 2px solid seagreen;
+    height: 10%;
+    padding: 1rem;
+}
+
+.content {
+    height: auto;
+}
+
+.adminSidebar,
+.adminHeader {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+/* SIDEBAR */
+.adminSidebar ul{
+    padding: 0;
+    margin-top: 6em;
+    border-radius: 15px;
+}
+.adminSidebar ul li{
+    list-style: none;
+    margin: 1em;
+    padding: 0 0.8em;
+}
+.adminSidebar ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+    padding: 1.3em;
+    border-radius: 15px;
+    text-align: left;
+    display: block;
+    width: 100%;
+}
+.adminSidebar .logo, .adminSidebar .logout{
+    display: block;
+    text-align: center;
+}
+.adminSidebar .logo{
+    margin-top: 2em;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+/* HEADER */
+.adminHeader{
+    align-items: center;
+}
+.adminHeader h2, .adminHeader p{
+    font-size: 1.2rem;
+}
+.adminHeader .title, .adminHeader .profile{
+    padding-left: 1.3em;
+}
+.adminHeader .title{
+    border: 1px solid rgb(175, 21, 154);
+    width: 80%;
+    
+}
+.adminHeader .profile{
+    display: flex;
+    border: 1px solid brown;
+    width: 20%;
+    align-items: center;
+}
+.adminHeader .profile-pic{
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 100%;
+    margin-right: 1rem;
+}
+
+
