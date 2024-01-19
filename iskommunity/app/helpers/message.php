@@ -1,6 +1,6 @@
 <?php if(isset($_SESSION['message'])): ?>
     <div class="msg">
-        <p>You are logged in!</p>
+        <p><?php echo ($_SESSION['message']);?></p>
     </div>
     <?php 
     unset($_SESSION['message']);

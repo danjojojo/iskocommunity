@@ -17,23 +17,31 @@ if(!empty($_SESSION["id"])){
     <link rel="stylesheet" href="assets/css/login.css">
 </head>
 <body>
+    <!-- NavBar -->
     <header>
-        <a href="index.php">Logo</a>
+        <a href="index.php"><img src="assets/images/Iskommunity_LogoName.png"></a>
         <p>Log in to PUP Iskommunity</p>
     </header>
+
     <!-- FORM VALIDATION -->
     <?php include(ROOT_PATH . '/app/helpers/formMessage.php')?>
+    
     <!-- FORM VALIDATION -->
-    <form action="" method="post" autocomplete="off">
-        <label for="username">Username or email</label>
-        <input type="text" name="username" id="username" value="<?php echo $usernameemail?>">    
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" value="<?php echo $password?>">
-        <button type="submit" name="login">Log in</button>
-    </form>
-    <div class="new">
+    <div class="login-box">
+        <div class="input-box">
+            <form action="" method="post" autocomplete="off">
+                <label for="username">Username or email</label>
+                <input type="text" name="username" id="username" value="<?php echo $usernameemail?>">    
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" value="<?php echo $password?>">
+                <button class="btn" type="submit" name="login">Log in</button>
+            </form>
+        </div>
+    </div>
+    <div class="signup-page">
         <p>New to PUP Iskommunity? <a href="signup.php">Create account</a></p>
     </div>
+    
     <?php 
         include(ROOT_PATH . '/app/includes/footer.php');
     ?>
