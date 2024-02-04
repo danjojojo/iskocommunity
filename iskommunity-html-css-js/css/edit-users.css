@@ -37,14 +37,12 @@ form{
 form h2{
     margin: 0.6em 0;
 }
-
 form input{
     margin: 0.6em 0em 1.3em;
     line-height: 1.7rem;
     font-size: 1rem;
 }
-
-form .buttons button{
+form .buttons button, .edit-org-buttons button{
     border: 1px solid black;
     font-size: 1rem;
     padding: 0.8rem;
@@ -53,7 +51,7 @@ form .buttons button{
     width: 20%;
     cursor: pointer;
 }
-form .buttons .cancel{
+form .buttons .cancel, .edit-org-buttons .cancel{
     border: 1px solid black;
     text-decoration: none;
     padding: 0.8rem 1rem;

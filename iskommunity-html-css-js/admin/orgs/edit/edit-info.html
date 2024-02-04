@@ -6,6 +6,7 @@
     scale=1.0">
     <link rel="stylesheet" href="/css/dashboard.css">
     <link rel="stylesheet" href="/css/tables.css">
+    <link rel="stylesheet" href="/css/create.css">
     <link rel="stylesheet" href="/css/edit-users.css">
     <title>Admin Dashboard</title>
 </head>
@@ -44,23 +45,36 @@
                         <ul>
                             <li><a href="edit-info.html">Account Information</a></li>
                             <li><a href="edit-pass.html">Change Password</a></li>
+                            <li><a href="edit-priv.html">Privileges</a></li>
                             <li><a href="edit-del.html">Delete Account</a></li>
                         </ul>
                     </div>
                     <form action="" method="post">
-                        <h2>Delete Account</h2>                     
-                        <p>Deleting your account is a permanent and irreversible action.
-                           This process will eliminate all connected data, including your profile details and any content you've shared.
-                           Once initiated, this action cannot be undone or recovered.
-                        </p>
-                        <br>
-                        <p>To delete <strong>username</strong>, enter password for verification.</p>
-                        <br>
-                        <label for="password">Password</label>
-                        <input type="text" name="password" id="password">
-                        <div class="buttons">
-                            <button type="submit" name="submit">Delete Account</button>
-                            <a href="/admin/admins.html" class="cancel">Cancel</a>
+                        <h2>Account Information</h2>
+                        <div class="errormsg">
+                            <ul>
+                                <li>Error message</li>       
+                            </ul>
+                        </div> 
+                        <label for="college_Code">College</label>
+                        <select name="college" id="college_Code">
+                            <option value="" disabled selected>-- Please select NONE if not affiliated with any college --</option>
+                        </select>
+                        <label for="orgCode">Org Abbreviation</label>
+                        <input type="text" name="org_Code" id="orgCode">
+                        <label for="name">Name</label>
+                        <input type="text" name="org_Name" id="name">
+                        <label for="username">Username</label>
+                        <input type="text" name="org_Username" id="username">
+                        <label for="email">Email Address</label>
+                        <input type="email" name="org_Email" id="email">
+                        <label for="interest">Interest</label>
+                        <select name="org_Interest" id="interest">
+                            <option value="" disabled selected>-- Please select an interest --</option>
+                        </select>
+                        <div class="edit-org-buttons">
+                            <button type="submit" name="submit">Save changes</button>
+                            <a href="/admin/organizations.html" class="cancel">Cancel</a>
                         </div>
                     </form>
                 </div>
