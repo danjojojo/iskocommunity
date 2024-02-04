@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-
     scale=1.0">
     <link rel="stylesheet" href="/css/dashboard.css">
-    <link rel="stylesheet" href="/css/tables.css">
     <link rel="stylesheet" href="/css/create.css">
+    <link rel="stylesheet" href="/css/tables.css">
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/classic/ckeditor.js"></script>
     <title>Admin Dashboard</title>
 </head>
 <body>
@@ -37,29 +38,41 @@
             </div>
             <div class="content">
                 <div class="content-header">
-                    <h1>Create Profile</h1>
+                    <h1><a href="/admin/posts.html">Posts</a> > <a href="/admin/posts/view-posts.html">Organizations' Posts</a> > Create Post</h1>
                 </div>
-                <div class="content-sidebar-form">
-                    <form action="" method="post">
-                        <div class="errormsg">
-                            <ul>
-                                <li>Error message</li>       
-                            </ul>
-                        </div> 
-                        <label for="collegecode">College Abbreviation</label>
-                        <input type="text" name="collegecode" id="collegecode">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" id="name">
-                        <div class="buttons">
-                            <button type="submit" name="submit">Create</button>
-                            <a href="/admin/colleges.html" class="cancel">Cancel</a>
+                
+                <form action="" method="post" class="post-content" enctype="multipart/form-data">
+                    <div class="errormsg">
+                        <ul>
+                            <li>Error message</li>       
+                        </ul>
+                    </div> 
+                    <div class="buttons">
+                        <button type="submit" name="submit">Create</button>
+                        <a href="/admin/posts/view-posts.html" class="cancel">Cancel</a>
+                    </div>
+                    <div class="body-input">
+                        <div class="body-header">
+                            <h2>Post Text</h2>
+                            
                         </div>
-                    </form>
-                </div>
+                        <textarea name="editor" id="editor" cols="30"></textarea>
+                    </div>
+                    <div class="image-input">
+                        <h2>Post Image</h2>
+                        <button type="button" onclick="removePostImage()">Remove Image</button>
+                        <br>
+                        <br>
+                        <img src="/images/preview_post_image.png" alt="Post image">
+                        <br>
+                        <input type="file" name="image">
+                    </div>
+                </form>
+                
             </div>
         </div>    
     </div>
 
-    <script src="/../../js/date.js"></script>
+    <script src="../../js/date.js"></script>
 </body>
 </html>

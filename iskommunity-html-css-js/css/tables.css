@@ -92,7 +92,7 @@ table{
 th, td{
     border: 1px solid black;
     text-align: center;
-    line-height: 2em;
+    line-height: 3em;
 }
 table a{
     text-decoration: none;
@@ -111,5 +111,82 @@ table a{
     text-decoration: none;
 }
 
+/* EDIT POST */
+.post-content{
+    padding: 1.5rem;
+    border: 1px solid black;
+    margin: 0 auto;
+    width: 90%;
+}
 
+details{
+    margin-bottom: 1.3rem;
+}
 
+.body-input{
+    margin-bottom: 1.5rem;
+}
+
+.post-content .image-input, .image-input input{
+    /* border: 4px solid rgb(0, 94, 255); */   
+    font-size: 1rem;
+}
+
+.ck-editor__editable[role="textbox"] {
+    /* Editing area */
+    min-height: 150px;
+    max-height: 200px;
+}
+
+.buttons a{
+    padding: 1rem;
+    border-radius: 9px;
+    text-decoration: none;
+}
+
+.publish{
+    color: blue;
+    line-height: 10px;
+}
+
+.unpublish{
+    color: red;
+    line-height: 10px;
+}
+
+/* DELETE POST */
+
+.delete-post-buttons button{
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    margin: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-post-buttons .cancel{
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 0.8rem 1rem;
+    border-radius: 5px;
+}
+
+/* EDIT MEMBERSHIP */
+
+.date-membership{
+    margin-top: 1.5rem;
+}
+
+.dates{
+    display: flex;
+    gap: 2rem;
+}
+
+.url-membership input{
+    width: 100%;
+}
+
+#membershipSection{
+    display: none;
+}

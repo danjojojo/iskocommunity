@@ -17,19 +17,30 @@ form input{
     line-height: 1.7rem;
 }
 
-form .buttons button{
-    border: 1px solid black;
+form .buttons button, .buttons button{
+    border: 1px solid rgb(0, 0, 0);
     font-size: 1rem;
-    padding: 0.8rem;
-    margin: 1em 0 2em;
+    padding: 0.8rem 2rem;
+    margin-right: 1rem;
     border-radius: 5px;
-    width: 20%;
+    cursor: pointer;
 }
-form .buttons .cancel{
+form .buttons .cancel, .buttons .cancel{
     border: 1px solid black;
     text-decoration: none;
-    padding: 0.8rem 1rem;
+    padding: 0.85rem 1rem;
     border-radius: 5px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: end;
+}
+
+.body-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 /* ERROR MSG */
@@ -80,4 +91,25 @@ select::after {
 /* ALL CAPS INPUTS */
 #orgCode, #collegeCode{
     text-transform: uppercase;
+}
+
+/* POSTS */
+
+.image-input{
+    margin-top: 1rem;
+}
+
+.image-input img{
+    min-width: 200px;
+    max-width: 300px;
+}
+
+/* MEMBERSHIP */
+
+.status-membership button{
+    border: 1px solid rgb(0, 0, 0);
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
 }

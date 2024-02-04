@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-
     scale=1.0">
     <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/create.css">
+    <link rel="stylesheet" href="/css/tables.css">
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/classic/ckeditor.js"></script>
     <title>Admin Dashboard</title>
 </head>
 <body>
@@ -34,18 +37,29 @@
                 </div>
             </div>
             <div class="content">
-                <div class="counter users">  
+                <div class="content-header">
+                    <h1><a href="/admin/posts.html">Posts</a> > <a href="/admin/posts/view-posts.html">Organizations' Posts</a> > Edit Post</h1>
                 </div>
-                <div class="counter posts">  
-                </div>
-                <div class="counter orgs">  
-                </div>
-                <div class="counter admins">  
-                </div>
+                
+                <form action="" method="post" class="post-content" enctype="multipart/form-data">
+                    <div class="body-input">
+                        <div class="body-header">
+                            <h2>Delete Post</h2>
+                        </div>
+                        <p>
+                            Are you sure that you want to delete this post?
+                        </p>
+                    </div>
+                    <div class="delete-post-buttons">
+                        <button type="submit" name="submit">Confirm</button>
+                        <a href="/admin/posts/view-posts.html" class="cancel">Cancel</a>
+                    </div>
+                </form>
+                
             </div>
         </div>    
     </div>
 
-    <script src="../js/date.js"></script>
+    <script src="../../js/date.js"></script>
 </body>
 </html>

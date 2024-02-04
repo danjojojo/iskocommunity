@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-
+    scale=1.0">
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/create.css">
+    <link rel="stylesheet" href="/css/tables.css">
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.2.0/classic/ckeditor.js"></script>
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="adminSidebar">
+            <a class="logo" href="../index.html">Logo</a>
+            <ul>
+                <li><a href="/admin/dashboard.html">Home</a></li>
+                <li><a href="/admin/admins.html">Admins</a></li>
+                <li><a href="/admin/students.html">Students</a></li>
+                <li><a href="/admin/colleges.html">Colleges</a></li>
+                <li><a href="/admin/organizations.html">Organization Profile</a></li>
+                <li><a href="/admin/posts.html">Organization Content</a></li>
+                <li><a href="/admin/tickets.html">Support Tickets</a></li>
+            </ul>
+            <!-- <a class="logout" href="#">Log-out</a> -->
+        </div>
+        <div class="dashboardContent">
+            <div class="adminHeader">
+                <div class="title">
+                    <h2>Dashboard</h2>
+                    <p id="date"></p>
+                </div>
+                <div class="profile">
+                    <div class="profile-pic"></div>
+                    <p>Username</p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="content-header">
+                    <h1><a href="/admin/posts.html">Content</a> > Org Membership</h1>
+                </div>
+                
+                <form action="" method="post" class="post-content" enctype="multipart/form-data">
+                    <div class="errormsg">
+                        <ul>
+                            <li>Error message</li>       
+                        </ul>
+                    </div> 
+                    <div class="body-input">
+                        <div class="buttons">
+                            <button type="submit" name="submit">Save Changes</button>
+                            <a href="/admin/posts.html" class="cancel">Cancel</a>
+                        </div>
+                        <div class="status-membership" id="status-div">
+                            <h2 id="status">Membership Status: CLOSED</h2>
+                            <button id="status-membership" onclick="toggleMembership()" type="button">Open Membership Application</button>
+                            
+                        </div>
+                        <div class="membership" id="membershipSection">
+                            <div class="body-header">
+                                <h2>Membership Process Text</h2>
+                            </div>
+                            <textarea name="editor" id="editor" cols="30"></textarea>
+    
+                            <div class="date-membership">
+                                <h2>Membership Date</h2>
+                                <div class="dates">
+                                    <div class="starts">
+                                        <h3>Starts</h3>
+                                        <input type="datetime-local">
+                                    </div>
+                                    <div class="until">
+                                        <h3>Until</h3>
+                                        <input type="datetime-local">
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="url-membership">
+                                <h2>Insert URL</h2>
+                                <input type="url" placeholder="URL of the Online Membership (e.g Google Forms, Microsoft Forms)">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                
+            </div>
+        </div>    
+    </div>
+
+    <script src="../../js/date.js"></script>
+    <script>
+
+        
+    </script>
+</body>
+</html>
