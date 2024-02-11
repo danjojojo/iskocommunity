@@ -99,4 +99,54 @@
     margin-right: 1rem;
 }
 
+.content-dash{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.content-dash div{
+    border: 1px solid black;
+    border-radius: 10px;
+    width: 30%;
+    padding: 2rem 2rem;
+    margin: 1rem;
+}
+
+/* .content-dash div p, .content-dash div h1{
+    border: 1px solid black;
+} */
+
+.content-dash div h1{
+    text-align: right;
+    margin-top: 3.2rem;
+    font-weight: 500;
+    font-size: 3rem;
+}
+
+.content-dash div table{
+    margin-top: 3rem;
+}
+
+.counter-tickets-posts table{
+    width: 50%;
+}
+
+.counter-tickets-posts table td:nth-child(1){
+    font-style: bold;
+}
+
+.counter-tickets-posts table td:nth-child(2){
+    text-align: right;
+}
+
+.counter-tickets-posts section{
+    display: flex;
+}
+
+.counter-tickets-posts section table:nth-child(2) td{
+    text-align: right;
+    font-weight: 500;
+    font-size: 3rem;
+}
 

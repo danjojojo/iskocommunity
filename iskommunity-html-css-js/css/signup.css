@@ -1,28 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 *{
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
+
+body{
+    width: 100%;
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(to right, #ca1e18, #730000);
+}
+
 
 header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 20px 200px;
-    border: 1px solid rgb(0, 0, 0);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    color: white;
+    text-align: center;
 }
 
 header a{
     text-decoration: none;
+    color: #ffbd00;
+}
+
+header img{
+    width: 300px;
 }
 
 form{
-    border: 1px solid black;
+    /* border: 1px solid rgb(231, 21, 21); */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     width: 800px;
-    margin: 50px auto 0;
+    margin: 0 auto;
     padding: 40px;
+    background-color: #7300008a;
 }
 
 .intro{
@@ -30,7 +51,10 @@ form{
 }
 
 .intro p{
+    font-size: 1.4rem;
     font-weight: bold;
+    color: white;
+    text-align: center;
 }
 
 .errormsg{
@@ -39,11 +63,65 @@ form{
     border-radius: 10px;
     margin-top: 1em;
     padding: 1em;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .errormsg ul li{
-    font-weight: 100;
+    font-weight: 500;
+    margin-left: 2em;
+}
+
+.input-box{
+    /* border: 1px solid rgb(214, 28, 28); */
+    border-radius: 10px;
+    margin: 1.2em auto;
+    padding: 1.2em;
+    color: white;
+    background-color: #7300008a;
+    margin-bottom: 25px;
+}
+
+.input-box input{
+    width: 100%;
+    height: 30px;
+    padding: 7px;
+    font-size: 15px;
+    border: 2px solid white;
+    /* border: 1px solid #cc0707; */
+    border-radius: 5px;
+    color: #0a0a0a;
+    outline: none;
+    transition: all 0.1s linear;
+    margin-top: 0.4rem;
+}
+
+.label{
+    font-size: 15px;
+    color: white;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+input:focus{
+    border: 2px solid #ffbd00;
+}
+
+.btn{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 18px;
+    background-color: #ffbd00b8;
+    border: 2px solid #ffbb00b8;
+    color: white;
+    border-radius: 7px;
+}
+
+.btn:hover{
+    border: 2px solid white;
 }
 
 form label{
@@ -62,12 +140,13 @@ form button{
 }
 
 footer{
-    margin-top: 50px;
+    margin-top: 10px;
 }
 
 footer p{
     text-align: center;
-    font-size: 1rem
+    font-size: 1rem;
+    color: white;
 }
 
 @media (width <= 1024px){

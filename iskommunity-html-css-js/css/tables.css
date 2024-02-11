@@ -190,3 +190,21 @@ details{
 #membershipSection{
     display: none;
 }
+
+
+/* SORT AND FILTER TICKETS */
+.sort-filter{
+    display:  flex;
+    align-items: center;
+}
+
+.filter-options{
+    display:  flex;
+    align-items: center;
+    margin-left: 1rem;
+}
+
+.filter-options select{
+    margin-left: 1rem;
+    padding: 0.5rem;
+}

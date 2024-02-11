@@ -36,26 +36,25 @@
             </div>
             <div class="content">
                 <div class="content-header">
-                    <h1>Organizations' Posts and Membership</h1>
+                    <h1><a href="/admin/posts.html">Content </a> > Organization's Reviews</h1>
                 </div>
                 <div class="search-create">
                     <div class="search">
-                            <input type="text" placeholder="Search org here">
+                        <input type="text" placeholder="Search review here">
+                    </div>
+                    <div class="create-new">
+                        
                     </div>
                 </div>
                 <div class="table-header">
                     <div class="table-header-title">
                         <div>
-                            <h3>List of organizations</h3>
+                            <h3>List of reviews</h3>
                         </div>
                         <div class="sort-options-org">
                             <p>Sort by:</p>
                             <a href="">Recent</a>
                             <a href="">Oldest</a>
-                            <a href="">Name A</a>
-                            <a href="">Name Z</a>
-                            <a href="">College A</a>
-                            <a href="">College Z</a>
                         </div>
                     </div>
                     <div class="msg">
@@ -65,25 +64,26 @@
                 <div class="table">
                     <table>
                         <thead>
-                            <th>No.</th>
-                            <th>Org</th>
-                            <th>College</th>
-                            <th>Posts</th>
-                            <th>Reviews</th>
-                            <th>Membership</th>
+                            <th>ID</th>
+                            <th>From</th>
+                            <th>Text</th>
+                            <th>Date Published</th>
+                            <th>View</th>
+                            <th>Delete</th>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>PUP The Programmers' Guild</td>
-                                <td>CCIS</td>
-                                <td><a href="posts/view-posts.html">View</a></td>
-                                <td><a href="posts/view-reviews.html">View</a></td>
-                                <td><a href="posts/edit-membership.html">View</a></td>
+                                <td>user</td>
+                                <td>Review text here ...</td>
+                                <td>2023-01-01</td>
+                                <td><a href="view-review.html">View</a></td>
+                                <td><a href="del-review.html">Delete</a></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                
                 <div class="content-footer">
                     <div class="pagination">
                         <a href="">First</a>
@@ -97,6 +97,6 @@
         </div>    
     </div>
 
-    <script src="../js/date.js"></script>
+    <script src="../../js/date.js"></script>
 </body>
 </html>
