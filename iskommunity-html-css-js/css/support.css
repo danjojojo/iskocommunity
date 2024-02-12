@@ -17,18 +17,10 @@ body{
     overflow-x: hidden;
 }
 
-.active{
-    border-bottom: 2px solid var(--main-color);
-}
-
 .main-width{
     width: 1400px;
     max-width: 95%;
     margin: 0 auto;
-}
-
-.logo-nav img{
-    width: 250px;
 }
 
 .hero{

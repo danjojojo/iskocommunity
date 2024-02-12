@@ -3,36 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Join PUP Iskommunity</title>
+    <title>Sign-up | PUP Iskommunity</title>
     <link rel="stylesheet" href="css/signup.css">
 </head>
 <body>
+    <!--NavBar-->
     <header>
-        <a href="index.html">Logo</a>
+        <a href="index.html"><img src="/img/Iskommunity_LogoName_2.png"></a>
         <p>Already have an account? <a href="login.html">Log in</a></p>
     </header>
+
+    <!--Form-->
     <form action="" method="post" autocomplete="off">
+        
         <div class="intro">
             <p>Welcome to PUP Iskommunity!</p>
             <p>Let's get you started</p>
+            
             <div class="errormsg">
                 <ul>
                     <li>Error message</li>       
                 </ul>
             </div>
         </div>
-        <label for="email">Enter your email</label>
-        <input type="email" name="email" id="email">
-        <label for="username">Enter your username</label>
-        <input type="text" name="username" id="username">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password">
-        <label for="confirmpassword">Confirm your password</label>
-        <input type="password" name="confirmpassword" id="confirmpassword">
-        <button type="submit" name="submit">All set!</button>
+
+        <div class="input-box">
+            <label for="email">Enter your email</label>
+            <input type="email" name="email" id="email">
+            <label for="username">Enter your username</label>
+            <input type="text" name="username" id="username">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password">
+            <label for="confirmpassword">Confirm your password</label>
+            <input type="password" name="confirmpassword" id="confirmpassword">
+            <button class="btn" type="submit" name="submit">All set!</button>
+        </div>
     </form>
     <footer>
-        <p>&copy; 2023 PUP Iskommunity</p>
+        <p>&copy; 2024 PUP Iskommunity</p>
         <p>In partial fulfillment of COMP 20163 - Database Administration and COMP 20213 - Web Development</p>
     </footer>
 </body>

@@ -1,0 +1,660 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Ubuntu:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --bg-color: #730000;
+    --text-color: #fff;
+    --main-color: #ffbd00;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* Styling for the header */
+
+.main-width{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.logo-nav img{
+    width: 300px;
+}
+
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 60vh;
+    background: linear-gradient(to right, #ca1e18, #730000);
+    position: relative;
+}
+
+.hero header .logo h2 a{
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.hero header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li a{
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 80px;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
+}
+
+nav ul li:not(:last-child):not(:nth-last-child(2)) a:hover,
+nav ul li:not(:last-child):not(:nth-last-child(2)) a.focus{
+    border-bottom: 2px solid var(--main-color);
+}
+
+nav ul li.active a{
+    border-bottom: 2px solid var(--main-color);
+}
+
+nav ul li.login-btn a{
+    background: transparent;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    padding: 10px 30px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 180px;
+}
+
+nav ul li.login-btn:hover a{
+    border: 1px solid var(--main-color);
+    color: var(--bg-color);
+    background: var(--main-color);
+    transition: 0.4s;
+}
+
+nav ul li.signup-btn a{
+    background: var(--text-color);
+    color: var(--bg-color);
+    border: 2px solid var(--text-color);
+    padding: 10px 30px;
+    border-radius: 30px;
+    line-height: 1.4;
+    font-size: 14px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+nav ul li.signup-btn:hover a{
+    border: 1px solid var(--main-color);
+    color: var(--bg-color);
+    background: var(--main-color);
+    transition: 0.4s;
+}
+
+.msg{
+    border: 1px solid seagreen;
+    background: rgba(0, 255, 72, 0.254);
+    color: white;
+    padding: 1.3em 5em;
+    margin: 1em 0;
+}
+
+.content{
+    padding-top: 140px;
+}
+
+.content .main-text{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+}
+
+.content .main-text h1{
+    font-size: 60px;
+    font-weight: 800;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.content .main-text h6{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--text-color);
+    margin-bottom: 40px;
+}
+
+.content .main-text a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--bg-color);
+    background: var(--text-color);
+    border: 1px solid var(--text-color);
+    padding: 10px 30px;
+    line-height: 1.4;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.content .main-text a:hover{
+    transform: scale(1.2);
+    border: 1px solid white;
+    background: transparent;
+    color: var(--text-color);
+    transition: 0.4s;
+}
+
+.content .main-text a.l-btn{
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    margin-left: 20px;
+}
+
+.content .main-text a.l-btn:hover{
+    color: var(--bg-color);
+    background: var(--text-color);
+    border: 1px solid var(--text-color);
+    transition: 0.4s;
+}
+
+.welcome-picture{
+    position: absolute;
+    width: 100%;
+    height: 85%;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+}
+
+.welcome-picture img{
+    height: 100%;
+}
+
+.main-width-2{
+    width: 1400px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.fyg .fyg-text{
+    position: relative;
+    z-index: 2;
+    margin-bottom: 50px;
+    text-align: center; /* Added */
+}
+
+.fyg .fyg-text h2{
+    font-size: 50px;
+    font-weight: 800;
+    color: var(--bg-color);
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+.fyg .fyg-text p{
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--bg-color);
+    margin-bottom: 10px;
+}
+
+.fyg .fyg-text a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background: var(--bg-color);
+    border: 1px solid var(--bg-color);
+    padding: 10px 30px;
+    line-height: 1.4;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.fyg .fyg-text a:hover{
+    transform: scale(1.2);
+    border: 1px solid var(--bg-color);
+    background: transparent;
+    color: var(--bg-color);
+    transition: 0.4s;
+}
+
+@keyframes slide {
+    from{
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logos{
+    overflow: hidden;
+    padding: 10px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos::before, .logos::after{
+    position: absolute;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    content: '';
+    z-index: 2;
+}
+
+.logos::before{
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos::after{
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos-slide{
+    display: inline-block;
+    animation: 25s slide infinite linear;
+}
+
+.logos-slide img{
+    height: 200px;
+    margin: 0 40px;
+    opacity: 0.8;
+}
+
+
+
+/* Organization Search */
+.org-content{
+    text-align: center;
+    align-items: center;
+    padding: 30px 0;
+}
+
+.omain-text h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.omain-text p{
+    font-size: 24px;
+    font-weight: 100;
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.search-box{
+    width: 600px;
+    background: #fff;
+    margin: 10px auto 0;
+    border-radius: 10px;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+input{
+    flex: 1;
+    height: 50px;
+    background: transparent;
+    border: 0;
+    outline:  0;
+    font-size: 18px;
+    color: #555;
+}
+
+button{
+    background: transparent;
+    border: 0;
+    outline: 0;
+}
+
+button .ri-search-line{
+    width: 25px;
+    color: #555;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* Organization Cards */
+
+/*Slider Tab*/
+.org-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 20vh;
+    padding: 0 10px
+}
+
+.org-wrapper{
+    padding: 35px;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 13px;
+    overflow-x: hidden;
+    position: relative;
+}
+
+
+.org-wrapper .icon{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 100%;
+    width: 120px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.org-wrapper .icon:first-child{
+    left: 0;
+    background: linear-gradient(90deg, #fff 70%, transparent);
+}
+
+.org-wrapper .icon:last-child{
+    right: 0;
+    background: linear-gradient(-90deg, #fff 70%, transparent);
+    justify-content: flex-end;
+}
+
+.org-wrapper .icon i{
+    width: 55px;
+    height: 55px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.org-wrapper .icon:first-child i{
+    margin-left: 15px;
+}
+
+.org-wrapper .icon:last-child i{
+    margin-right: 15px;
+}
+
+.org-wrapper .icon i:hover{
+    background: #f5f4fd;
+}
+
+.org-wrapper .tabs-box{
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.tabs-box .tab{
+    cursor: pointer;
+    font-size: 1.18rem;
+    white-space: nowrap;
+    background: #f5f4fd;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 1px solid #bab7cf;
+}
+
+.tabs-box .tab.selected{
+    background: #730000;
+    color: #fff;
+    font-weight: 500;
+}
+
+
+/* Organization Cards */
+.org-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #fff;
+}
+
+.org-container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px 50px;
+    padding: 75px 50px;
+}
+
+.org-container .org-card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    height: 300px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.348);
+    transition: 0.5s;
+}
+
+.org-container .org-card:hover{
+    height: 400px;
+}
+
+.org-container .org-card .org-imgBx{
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #730000;
+    border-radius: 12px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+
+.org-container .org-card:hover .org-imgBx{
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.org-container .org-card .org-imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.org-container .org-card .org-content{
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    padding: 0 30px;
+    height: 35px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.org-container .org-card:hover .org-content{
+    height: 250px;
+    top: 150px;
+}
+
+.org-container .org-card .org-content h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #730000;
+}
+
+.org-container .org-card .org-content p{
+    color: #333;
+}
+
+.org-container .org-card .org-content a{
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #ffbd00;
+    color: #730000;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+
+/* Styling for Footer*/
+footer{
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    background-color: #730000;
+    color: #fff;
+    padding: 100px 0 30px;
+    font-size: 13px;
+    line-height: 20px;
+}
+.row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.row .col{
+    flex-basis: 25%;
+    margin-bottom: 10px;
+}
+
+.row .col .logo{
+    width: 150px;
+}
+
+.row .col h3{
+    width: fit-content;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.row .col ul li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.row .col ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+
+form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;    
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+form input{
+    margin-right: 10px;
+    width: 100%;
+    background: transparent;
+    color: #fff;
+    border: 0;
+    outline: none;
+
+}
+
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+form button .ri-arrow{
+    font-size: 18px;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.social-icons i{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+hr{
+    width: 90%;
+    border: 0;
+    border-top: 1px solid #fff;
+    margin: 30px auto;
+}
+
+.copyright{
+    text-align: center;
+}
+
+.footer-note{
+    text-align: center;
+}

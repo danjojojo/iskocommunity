@@ -104,17 +104,6 @@ select::after {
     max-width: 300px;
 }
 
-#removeImg{
-    display: none;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
-#removeImgg{
-    font-size: 1rem;
-    margin-bottom: 1rem;
-}
-
 /* MEMBERSHIP */
 
 .status-membership button{
@@ -123,38 +112,4 @@ select::after {
     padding: 0.8rem 2rem;
     border-radius: 5px;
     cursor: pointer;
-}
-
-/* SUPPORT TICKET */
-
-.body-text{
-    border: 1px solid black;
-    padding: 2rem;
-    text-align: justify;
-}
-
-.cat-stat{
-    display: flex;
-}
-
-.cat-stat div{
-    padding-right: 1rem;
-    align-items: center;
-}
-
-.status select{
-    margin-top: 0;
-}
-
-.category ul{
-    margin-top: 1.5rem;
-}
-
-.from{
-    padding-bottom: 1rem;
-}
-
-.from #date{
-    color: #747474;
-    margin-top: 0.4rem
 }
